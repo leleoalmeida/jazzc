@@ -1,0 +1,91 @@
+@font-face {
+    font-family: remixicon;
+    src: url("./fonts/remixicon.woff");
+}
+
+body {
+    margin: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.navbar {
+    height: auto;
+    background-color: #1d1d1d66;
+    padding: 16px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.navbar>a {
+    align-self: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 400px;
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+    max-width: 320px;
+    background: rgba(2, 0, 36, 0.2);
+    background: linear-gradient(141deg, rgba(2, 0, 36, 0.6) 0%, rgba(17, 17, 73, 0.6) 35%, rgba(1, 37, 45, 0.6) 100%);
+    border: #3f3f5d 1px solid;
+    border-radius: 16px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero .button {
+    background-color: rgba(2, 0, 36, 1);
+    border-radius: 20px;
+    color: white;
+    /* border: none; */
+    border: 1px rgb(45, 44, 58) solid;
+    font-size: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
