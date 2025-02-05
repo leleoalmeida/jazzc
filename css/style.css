@@ -37,7 +37,7 @@ video {
 
 .navbar {
     height: auto;
-    background-color: #1d1d1d66;
+    background-color: #1d1d1dd5;
     padding: 16px 80px;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@ video {
 
 .navbar>a {
     align-self: center;
-    color: #fff;
+    color: rgb(243, 208, 104);
     text-decoration: none;
     font-size: 36px;
 }
@@ -54,10 +54,20 @@ video {
 .content {
     flex: 1;
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
-    margin-left: 400px;
+    justify-content: center;
+    gap: 80px;
+    /* margin-left: 10%; */
+    background-color: #1d1d1dd5;
 
+}
+
+#logo {
+    display: flex;
+    align-self: center;
+    width: 60%;
+    border-radius: 8px;
 }
 
 .hero {
@@ -65,20 +75,22 @@ video {
     flex-direction: column;
     gap: 20px;
     align-self: center;
-    max-width: 320px;
-    background: rgba(2, 0, 36, 0.2);
-    background: linear-gradient(141deg, rgba(2, 0, 36, 1) 0%, rgba(17, 17, 73, 1) 35%, rgba(1, 37, 45, 1) 100%);
-    border: #3f3f5d 1px solid;
-    border-radius: 16px;
-    padding: 20px;
+    /* max-width: 320px; */
+    /* background: rgba(2, 0, 36, 0.2); */
+    /* background: linear-gradient(141deg, rgba(240, 187, 64, 1) 0%, rgb(243, 208, 104) 35%, rgba(240, 187, 64, 1) 100%); */
+    background-color: rgba(255, 67, 57, 0.721);
+
+    /* border: #3f3f5d 1px solid;*/
+    border-radius: 8px;
+    padding: 16px 16px;
     align-items: center;
     text-align: center;
+    color: rgb(255, 153, 0);
+
 }
 
-.hero img {
-    width: 100%;
-    border-radius: 8px;
-}
+
+
 
 .links {
     display: flex;
@@ -87,20 +99,36 @@ video {
 }
 
 .hero .button {
-    background-color: rgba(2, 0, 36, 1);
-    border-radius: 8px;
-    color: white;
+    /* text-align: start; */
+    border-radius: 4px;
+    color: rgb(80, 22, 19);
     /* border: none; */
-    border: 1px rgb(45, 44, 58) solid;
+    /* border: 1px rgb(45, 44, 58) solid; */
+    background-color: rgba(255, 67, 57, 1);
+
     font-size: 20px;
     padding: 8px 16px;
     cursor: pointer;
     text-decoration: none;
 }
 
+#album {
+    max-width: 300px;
+}
 
 
-@media (max-width: 1250px) {
+
+@supports (-webkit-touch-callout: none) {
+    #entrar {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+}
+
+
+
+@media (max-width: 760px) {
     body {
         background-color: black;
         overflow: hidden;
@@ -115,18 +143,32 @@ video {
         object-fit: contain;
     }
 
+
+
     .navbar {
         display: none;
     }
 
+    /* .content { */
+    /* margin: 20px */
+    /* } */
+
     .content {
-        margin: 20px
+        flex-direction: column;
+        gap: 40px
     }
 
-    .hero {
-        background: linear-gradient(141deg, rgba(2, 0, 36, 0.6) 0%, rgba(17, 17, 73, 0.6) 35%, rgba(1, 37, 45, 0.6) 100%);
+    #logo {
+        display: flex;
+        align-self: center;
+        width: 80%;
+        border-radius: 8px;
+    }
 
-        max-width: none;
-        width: 100%;
+
+    .hero {
+
+        /* max-width: none; */
+        /* width: 100%; */
     }
 }
